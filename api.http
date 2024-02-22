@@ -1,1 +1,26 @@
 GET http://localhost:3000
+
+### 
+GET http://localhost:3000/routes
+
+### 
+GET http://localhost:3000/routes/1
+
+### 
+POST http://localhost:3000/routes
+Content-Type: application/json
+
+{
+    "name": "route test 1",
+    "source_id": "ChIJCW0MfQ-rwAcRzxMHwRHKOI4",
+    "destination_id": "ChIJ5-1ZuWBJxwcRsQum-8pcLKg"
+}
+
+### Coisas do mapa
+
+### Pegar o plcae_id
+GET http://localhost:3000/places?text=rua mario de andrade, fortaleza, 1297
+
+### Pegar direções entre dois pontos
+GET http://localhost:3000/directions?originId=ChIJCW0MfQ-rwAcRzxMHwRHKOI4&destinationId=ChIJ5-1ZuWBJxwcRsQum-8pcLKg
+
